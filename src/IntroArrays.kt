@@ -34,7 +34,7 @@ fun main() {
     //operacoesAgregadoras()
     //utilizandoRanges()
     //IterandoSobreArrays()
-    //utilizandoArrays()
+    utilizandoArrays()
     // varivaeisSemArray()
 }
 
