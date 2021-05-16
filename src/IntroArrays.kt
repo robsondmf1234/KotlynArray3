@@ -1,4 +1,3 @@
-import arrays.operacoesAgregadoras
 import java.math.BigDecimal
 import java.math.RoundingMode
 
@@ -16,14 +15,14 @@ fun main() {
     //Função map ,vai pegar os dados e transforma para outro tipo
     //pega o salario(salarios) aplica o aumento , no final monta um salarioComAumentod do tipo Array<BigDecimal>
     val salariosComAumento: Array<BigDecimal> = salarios
-            .map { salario ->
-                if (salario < "5000.00".toBigDecimal()) {
-                    salario + "500.00".toBigDecimal().setScale(2, RoundingMode.UP)
-                } else {
-                    (salario * aumento).setScale(2, RoundingMode.UP)
-                }
+        .map { salario ->
+            if (salario < "5000.00".toBigDecimal()) {
+                salario + "500.00".toBigDecimal().setScale(2, RoundingMode.UP)
+            } else {
+                (salario * aumento).setScale(2, RoundingMode.UP)
             }
-            .toTypedArray()
+        }
+        .toTypedArray()
     println(salariosComAumento.contentToString())
 
 //Maneira mais longa de fazer o Array<BigDecimal>
