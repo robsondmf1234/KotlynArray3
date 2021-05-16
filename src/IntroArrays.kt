@@ -31,7 +31,7 @@ fun main() {
 //    salarios[1] = "2000.55".toBigDecimal()
 
 
-    //operacoesAgregadoras()
+    operacoesAgregadoras()
     //utilizandoRanges()
     //IterandoSobreArrays()
     //utilizandoArrays()
