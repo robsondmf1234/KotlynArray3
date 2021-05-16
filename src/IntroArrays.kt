@@ -35,7 +35,7 @@ fun main() {
     //utilizandoRanges()
     //IterandoSobreArrays()
     //utilizandoArrays()
-    // varivaeisSemArray()
+    //varivaeisSemArray()
 }
 
 //Função para criar um Array<BigDecimal>, receberá um vararg como paramentro dos salários

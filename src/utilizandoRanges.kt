@@ -9,19 +9,19 @@ public fun utilizandoRanges() {
 
     //Range de 0 até 100 pulando de 2 em 2
     val numerosPares = 0..100 step 2
-    for (num in numerosPares) {
-        print("$num ")
+    for (numeroPar in numerosPares) {
+        print("$numeroPar ")
     }
 
     println()
 
     //Percorrer série de numero de 0 até 100 pulando de 2 em 2
+    //Until não irá incluir o numero 100
     val numerosPares2 = 0 until 100 step 2
     for (num in numerosPares2) {
         print("$num ")
     }
     println()
-
 
     //Percorrer série de numero de 100 até 0 ,pulando de 2 em 2
     val numerosParesRegressivos = 100 downTo 0 step 2
@@ -31,20 +31,21 @@ public fun utilizandoRanges() {
 
     println()
 
-    //Verificado se um valor esta dentro do intervalo de salários
+    //[in] Verifica se um valor está dentro, do intervalo de salários
     val intervaloDeSalarios = 1500.0..5000.0
     val salario = 4000.0
     if (salario in intervaloDeSalarios) {
-        println("Está dentro do intervalo")
+        println("$salario - Está dentro do intervalo")
     } else {
-        println("Não está dentro do intervalo")
+        println("$salario - Não está dentro do intervalo")
     }
 
-    val intervaloDeLetras = 'a'..'z'
+    //[in] consegue fazer a verificação de caracteres também
+    val alfabeto = 'a'..'z'
     val letraBuscada = 'k'
-    if (letraBuscada in intervaloDeLetras) {
-        println("A letra possui no intervalo de letras")
+    if (letraBuscada in alfabeto) {
+        println("A letra '$letraBuscada' está dentro do alfabeto informado")
     } else {
-        println("A letra não possui no intervalo de letras")
+        println("A letra $letraBuscada não está dentro do alfabeto informado")
     }
 }
