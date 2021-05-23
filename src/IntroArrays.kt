@@ -38,7 +38,16 @@ fun main() {
     }
     println(gastoTotal)
 
+    //takeLast(n) retorna um List<T>
+    //toTypedArray converte a lista em Array
+//    val tresMaioresSalarios: List<BigDecimal> = salariosOrdenados.takeLast(3)
+    val mediaSalários = salariosComAumento
+        .sorted()
+        .takeLast(3)
+        .toTypedArray()
+        .media()
 
+    println(mediaSalários)
 
     //operacoesAgregadoras()
     //utilizandoRanges()
@@ -53,26 +62,3 @@ private fun calculaAumentoRelativo(salario: BigDecimal, aumento: BigDecimal) =
     } else {
         (salario * aumento).setScale(2, RoundingMode.UP)
     }
-
-
-//Função para criar um Array<BigDecimal>, receberá um vararg como paramentro dos salários
-fun bigDecimalArrayOf(vararg valores: String): Array<BigDecimal> {
-    //[nome do array] = [ <declaração de BigDecimal> ] [ (tamanho do array)] { [indice ->
-    //[ pega a variavel no indicie[indice] ]. tranforma para BigDecimal
-    val salarios = Array<BigDecimal>(valores.size) { i ->
-        valores[i].toBigDecimal()
-    }
-    return salarios
-}
-
-//This é o próprio array<BigDecimal>
-//Reduce
-//Sintaxe reduce { acc, bigDecimal ->  }
-//acc = acumulador , e o valor que vai ficar armazenando os valores que vierem do array de BigDecimal
-//bigDecimal e o valor no indice do array de BigDecimal
-fun Array<BigDecimal>.somatoria(): BigDecimal {
-    return this.reduce { acumulador, valor ->
-        acumulador + valor
-    }
-}
-
