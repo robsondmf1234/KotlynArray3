@@ -1,7 +1,14 @@
+package array
+
+import bigDecimalArrayOf
+import media
+import somatoria
 import java.math.BigDecimal
 import java.math.RoundingMode
 
-fun main() {
+//fun main() {
+  fun teste(){
+
 //setScale serve para especificar quantas casa aparecem após a virgula
 //RoundingMode.UP arredondamento para cima
 //sintaxe setScale(quantidade casas após virgula , método de arredondamento)
