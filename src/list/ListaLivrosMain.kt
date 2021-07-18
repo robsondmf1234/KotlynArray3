@@ -2,6 +2,8 @@ package list
 
 //Arquivo de demonstra o uso de List
 
+/*
+
 fun main() {
 
     //Filtrando a lista pelo nome do autor e ordenando pelo ano de publicação
@@ -98,10 +100,5 @@ fun main() {
 //    println(livros)*/
 }
 
-//Extension Function para imrpimir a lista de forma mais organizada
-fun List<Livro>.imprimeComMarcadores() {
-    val textoFormatado = this.joinToString(separator = "\n") {
-        " - ${it.titulo} de ${it.autor}"
-    }
-    println(" #### Lista de Livros ####\n$textoFormatado")
-}
+ */
+
