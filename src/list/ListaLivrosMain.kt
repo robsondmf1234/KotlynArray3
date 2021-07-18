@@ -4,7 +4,7 @@ package list
 
 fun main() {
 
-    //Filtrando a lista pelo nome do autor
+    //Filtrando a lista pelo nome do autor e ordenando pelo ano de publicação
     listaDeLivros
         .filter { it.autor == "João Guimaraes Rosa" }
         .sortedBy { it.anoPublicacao }
